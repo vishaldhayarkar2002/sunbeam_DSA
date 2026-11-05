@@ -25,10 +25,10 @@ public class BubbleSort {
 		int passes = 0, comps = 0, flag = 0;
 		for(int i = 1 ; i < N ; i++) {
 			passes++;
+			flag = 0;
 			//1. compare pairs of consecutive elements one by one
 			for(int j = 0 ; j < N-i ; j++) {
 				comps++;
-				flag = 0;
 				// 2. if left element is greater than right element then swap
 				if(arr[j] > arr[j+1]) {
 					int temp = arr[j];
